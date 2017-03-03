@@ -186,6 +186,7 @@ fieldset.grupo .campo {
 .campo input[type="email"],
 .campo input[type="url"],
 .campo input[type="tel"],
+.campo input[type="password"],
 .campo select,
 .campo textarea, #numero, #dataDeNacimento {
     padding: 0.2em;
@@ -213,10 +214,5 @@ select, label.checkbox, #dataDeNacimento{
     cursor: pointer;
 }
 
-/*Formtaçao do Botao Buscar Cep*/
 
-#buscarCep{
-    position: absolute;
-    top: 352px;
-    left: 185px;
-}
+
