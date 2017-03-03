@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #f8f8f8;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+/* Formataçao do Menu*/
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom: 0.5px solid #d4d4d4;
+
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: gray;
+    background: #e7e7e7;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: gray;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*Formataçao da Page Cadastro de Funcionario*/
+
+div{
+    margin: auto;
+    width: auto;
+    border: 0;
+
+}
+form{
+    margin:0 auto;
+    width: auto;;
+
+    padding: 1em;
+    border: 0;
+    border-radius: 1em;
+}
+
+fieldset{
+    border: 0;
+    width: 700px;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 2em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea, #numero, #dataDeNacimento {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 5px;
+}
+
+select, label.checkbox, #dataDeNacimento{
+    cursor: pointer;
+}
+
+/*Formtaçao do Botao Buscar Cep*/
+
+#buscarCep{
+    position: absolute;
+    top: 352px;
+    left: 185px;
+}
